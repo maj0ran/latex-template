@@ -1,0 +1,20 @@
+%----------------------------%
+% Header and Footer Settings %
+%----------------------------%
+\usepackage{fancyhdr} % can be used to customize footer/header
+\pagestyle{fancy} % set header/footer style to custom
+\fancyhf{} % clear header/footer style
+\fancyfoot[C]{[\space\thepage\space]} % custom page number in footer
+\renewcommand{\headrulewidth}{0.4pt} % line below header
+\renewcommand{\footrulewidth}{0.4pt} % line above footer
+
+%--------------------------------%
+% make the section numbers Roman %
+%--------------------------------%
+\renewcommand{\thesection}{\Roman{section}}
+% subsections shouldn't be used with Roman numbers since it looks awkward
+% so when we use this format, there should be only main-sections
+
+
+%----- disables the auto-indent at the first line in a -----%
+% \setlength{\parindent}{0pt}paragraph.

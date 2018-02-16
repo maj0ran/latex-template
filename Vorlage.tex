@@ -1,0 +1,45 @@
+%---------------------------%
+% Simple LaTeX Template with basic functionality
+% Author: Marian Cichy
+%
+% Description: This Template is not intended to be something official nor something fancy. I use it to make fast writeups for my study or privat projects
+%---------------------------%
+
+
+%-------------------------%
+% Document Class Settings %
+% font size 12pt          %
+% two columns             %
+%-------------------------%
+\documentclass[12pt,a4paper]{article} % set twocolumns here if you want
+
+
+\input{packages/basic}
+\input{packages/language}
+\input{packages/format}
+\input{packages/bibliography}
+\input{codeformats/matlab}
+
+
+%----- TITLE SECTION -----%
+\title{Put Title here}
+\author{Marian}
+
+
+%----- DOCUMENT SECTION -----%
+\begin{document}
+
+\maketitle
+% maketitle triggers thispagestyle{plain}, therefore set style after
+\thispagestyle{fancy}
+
+\renewcommand{\abstractname}{Abstract}
+
+\begin{abstract}
+Put Abstract here
+\end{abstract}
+
+\section{First Section}
+\label{sec:first}
+
+\end{document}
